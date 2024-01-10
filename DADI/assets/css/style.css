@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/background-dices.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 120px;
+}
+
+#title,
+#container-buttons {
+    width: fit-content;
+}
+
+#title-image {
+    width: 100px;
+}
+
+.svg-win {
+    fill: green;
+}
+
+.svg-fail {
+    fill: red;
+}
+
+.dices {
+    transition: all 1s;
+}
