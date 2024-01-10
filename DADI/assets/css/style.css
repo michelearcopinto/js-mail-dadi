@@ -1,6 +1,4 @@
 body {
-    height: 100vh;
-    position: relative;
     background-image: url(../img/background-dices.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,11 +7,7 @@ body {
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -38,6 +32,22 @@ h1 {
     fill: red;
 }
 
-.dices {
-    transition: all 1s;
+.svg-tie {
+    fill: blue;
+}
+
+.score-win {
+    background-color: green;
+}
+
+.score-fail {
+    background-color: red;
+}
+
+.score-tie {
+    background-color: blue;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
 }
