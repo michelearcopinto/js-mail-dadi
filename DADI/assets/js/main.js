@@ -178,13 +178,13 @@ showPoints.addEventListener('click', function () {
 
         if (pointsGiocatore[i] > pointsComputer[i]) {
 
-            puntoGiocatore.classList.add('score-win', 'border');
-            puntoComputer.classList.add('score-fail', 'border');
+            puntoGiocatore.classList.add('score-win', 'text-white', 'border');
+            puntoComputer.classList.add('score-fail', 'text-white', 'border');
 
         } else if (pointsComputer[i] > pointsGiocatore[i]) {
 
-            puntoGiocatore.classList.add('score-fail', 'border');
-            puntoComputer.classList.add('score-win', 'border');
+            puntoGiocatore.classList.add('score-fail', 'text-white', 'border');
+            puntoComputer.classList.add('score-win', 'text-white', 'border');
 
         } else {
 
