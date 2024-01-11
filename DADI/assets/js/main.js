@@ -94,10 +94,15 @@ startButton.addEventListener('click', function () {
         puntoGiocatore.textContent = numeroGiocatore;
         finalScoreGiocatore.parentNode.insertBefore(puntoGiocatore, finalScoreGiocatore);
 
+        divsGiocatoreArray.push(puntoGiocatore);
+
+
         puntoComputer = document.createElement('div');
         puntoComputer.classList.add("text-center", "fs-3", "fw-bold", "d-flex", "justify-content-center", "align-items-center");
         puntoComputer.textContent = numeroComputer;
         finalScoreComputer.parentNode.insertBefore(puntoComputer, finalScoreComputer);
+
+        divsComputerArray.push(puntoComputer);
 
 
         if (numeroGiocatore > numeroComputer) {
@@ -164,7 +169,6 @@ resetButton.addEventListener('click', function () {
     sommaGiocatore = 0;
     sommaComputer = 0;
 
-
     console.log(pointsGiocatore)
     console.log(pointsComputer)
 
@@ -191,6 +195,7 @@ showPoints.addEventListener('click', function () {
         puntoComputer.classList.add("text-center", "fs-3", "fw-bold", "d-flex", "justify-content-center", "align-items-center");
         puntoComputer.textContent = pointsComputer[i];
         scoreComputer.insertAdjacentElement('afterend', puntoComputer);
+
         divsComputerArray.push(puntoComputer);
 
 
@@ -226,6 +231,9 @@ showPoints.addEventListener('click', function () {
 
     console.log(sommaGiocatore)
     console.log(sommaComputer)
+
+    divsGiocatoreArray = Array.from(divsGiocatoreArray);
+    divsComputerArray = Array.from(divsComputerArray);
 
     console.log(pointsGiocatore)
     console.log(pointsComputer)
